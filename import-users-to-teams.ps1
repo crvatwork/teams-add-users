@@ -26,11 +26,4 @@ foreach ($email in $USER_EMAILS) {
     Write-Host ("Adding " + $email.email)
     Add-TeamChannelUser -GroupId $GROUP_ID -user $email.email -DisplayName $CHANNEL_NAME    
 }
-
-Write-Host " "
-Write-Host " "
-Write-Host "--------------------------------------------------------------"
-Write-Host "Users added to the team successfully !"
-Write-Host "--------------------------------------------------------------"
-
 CMD /c PAUSE
